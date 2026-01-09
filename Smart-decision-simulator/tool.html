@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Smart Decision Simulator</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-header">
+        <p id="userGreeting"></p>
+        <button id="logoutBtn">Logout</button>
+    </div>
+    <div class="app-container">
+        <h1 class="animated-title">Smart Decision Simulator</h1>
+        <p class="tagline">Your Personal Decision Assistant</p>
+    </div>
+    <div class="decision-input">
+        <label for="decision">
+        What decision are you trying to make?
+      </label>
+
+        <input type="text" id="decision" placeholder="e.g. Should I switch my job?" required>
+        <p id="inlineMsg" class="inline-msg"></p>
+        <div class="action-buttons">
+            <button id="analyzeBtn">
+
+        Analyze Decision
+    </button>
+            <button id="resetBtn" type="button">
+
+        Reset
+    </button>
+        </div>
+
+    </div>
+    <hr class="divider">
+    <section class="question-section">
+
+        <h2>Describe Your Current State 🌐</h2>
+
+        <!-- MONEY QUESTION -->
+        <div class="question-card">
+            <p class="question-title">
+                💰 How is your financial situation right now?
+            </p>
+
+            <label>
+            <input type="radio" name="money" value="2">
+            Struggling, no safety net
+        </label>
+
+            <label>
+            <input type="radio" name="money" value="5">
+            Stable but tight
+        </label>
+
+            <label>
+            <input type="radio" name="money" value="8">
+            Comfortable & secure
+        </label>
+        </div>
+        <div class="question-divider"></div>
+        <!-- STRESS QUESTION -->
+        <div class="question-card">
+            <p class="question-title">
+                🧠 How much stress will this decision add?
+            </p>
+
+            <label>
+            <input type="radio" name="stress" value="2">
+            Very little stress
+        </label>
+
+            <label>
+            <input type="radio" name="stress" value="5">
+            Manageable stress
+        </label>
+
+            <label>
+            <input type="radio" name="stress" value="8">
+            Constant pressure
+        </label>
+        </div>
+        <div class="question-divider"></div>
+        <!-- GROWTH QUESTION -->
+        <div class="question-card">
+            <p class="question-title">
+                🚀 How valuable is this for your long-term growth?
+            </p>
+
+            <label>
+            <input type="radio" name="growth" value="2">
+            Little to no growth
+        </label>
+
+            <label>
+            <input type="radio" name="growth" value="5">
+            Some learning
+        </label>
+
+            <label>
+            <input type="radio" name="growth" value="9">
+            Life-changing opportunity
+        </label>
+        </div>
+
+    </section>
+    <div class="decision-factors hidden" id="decisionFactors">
+
+        <h3>Decision Factors</h3>
+
+        <div class="factor">
+            <label>
+                Money Impact:
+                <span class="value" id="moneyValue">5</span>
+            </label>
+            <input type="range" id="moneySlider" min="0" max="10" disabled>
+        </div>
+
+        <div class="factor">
+            <label>
+                Stress Level:
+                <span class="value" id="stressValue">5</span>
+            </label>
+            <input type="range" id="stressSlider" min="0" max="10" disabled>
+        </div>
+
+        <div class="factor">
+            <label>
+                Growth Opportunity:
+                <span class="value" id="growthValue">5</span>
+            </label>
+            <input type="range" id="growthSlider" min="0" max="10" disabled>
+        </div>
+
+    </div>
+    <div class="result-card neutral" id="resultCard">
+        <div class="result-icon" id="resultIcon"></div>
+        <h3>Recommended Decision</h3>
+        <p class="result-text" id="resultText">
+            Think Carefully Before Taking This Step
+        </p>
+        <p class="score-text" id="scoreText"></p>
+        <p class="explain-text" id="explainText"></p>
+        <p class="insight-text" id="insightText"></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

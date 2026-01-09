@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #eef2ff, #f9fafb);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #374151;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    box-shadow: 0 4px 16px rgba(79, 70, 229, 0.15);
+    transform: scale(1.05);
+}
+
+.how-it-works {
+    padding: 80px 20px;
+    background: #eef8f8;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #f9fafb;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+}
+
+.step span {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 14px;
+    color: #374151;
+}
+
+
+/* =========================
+   WHY THIS – ISOLATED CARDS
+   ========================= */
+
+.why-this {
+    padding: 80px 20px;
+    background: #f3f6fd;
+    text-align: center;
+}
+
+.why-cards {
+    max-width: 900px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.why-card {
+    background: #f9fafb;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.why-card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.why-card p {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.site-header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: #111827;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.nav-cta {
+    padding: 8px 14px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #ffffff !important;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.services {
+    padding: 60px 20px;
+    background: #f3faf7;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #f9fafb;
+    padding: 24px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.service p {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.feedback {
+    padding: 60px 20px;
+    background: #f9f5ff;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.feedback-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feedback-card {
+    background: #ffffff;
+    padding: 22px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    font-size: 14px;
+    color: #374151;
+}
+
+.feedback-card span {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.site-footer {
+    background: #111827;
+    color: #e5e7eb;
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-brand h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #9ca3af;
+    max-width: 300px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.steps,
+.services,
+.reasons,
+.feedback-cards {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* .steps:hover,
+.services:hover,
+.why-cards:hover,
+.feedback-cards:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+} */
+
+section h2 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+        padding: 30px 8px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 15px;
+    }
+    .cta-btn {
+        padding: 10px 18px;
+        font-size: 15px;
+    }
+    .how-it-works,
+    .why-this,
+    .services,
+    .feedback {
+        padding: 40px 8px;
+    }
+    .how-it-works h2,
+    .services h2,
+    .feedback h2,
+    .why-this h2 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    .steps,
+    .service-cards,
+    .feedback-cards,
+    .why-cards {
+        flex-direction: column !important;
+        display: flex !important;
+        gap: 16px;
+    }
+    .step,
+    .service,
+    .feedback-card,
+    .why-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto;
+        padding: 14px;
+    }
+    .header-container,
+    .footer-container {
+        flex-direction: column;
+        gap: 16px;
+        padding: 10px 8px;
+    }
+    .logo {
+        font-size: 16px;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    .footer-brand h3 {
+        font-size: 15px;
+    }
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
